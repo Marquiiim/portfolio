@@ -1,0 +1,84 @@
+.container-certificates {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 160px auto;
+    max-width: 1200px;
+    gap: 20px;
+    z-index: 999;
+
+    & .certificate-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+    }
+
+    & .js-certificates,
+    .algologi-certificates,
+    .fundaments-certificates {
+        color: white;
+        background-color: rgb(69, 7, 131);
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+        border-radius: 5px;
+
+        & p {
+            margin: 0;
+        }
+
+        & .more {
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+
+            &:hover {
+                background-color: white;
+                color: rgb(69, 7, 131);
+            }
+        }
+    }
+
+    & .morejs,
+    .morealgologi,
+    .morefundaments {
+        display: none;
+        background-color: rgb(100, 50, 150);
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 5px;
+        width: 300px;
+        opacity: 0;
+        transition: opacity 1s ease-in;
+
+        & ul {
+
+            & li {
+                padding: 5px;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: rgb(69, 7, 131);
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    & .morejs.show,
+    .morealgologi.show,
+    .morefundaments.show {
+        display: block;
+        opacity: 1;
+    }
+}

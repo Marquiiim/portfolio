@@ -1,0 +1,43 @@
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 160px auto;
+    max-width: 1200px;
+    z-index: 999;
+
+    & a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    & div {
+        width: calc(25% - 20px);
+        height: 200px;
+        margin: 10px;
+        background-color: blueviolet;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid white;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        overflow: hidden;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+
+        & .projects {
+            width: 415px;
+            height: auto;
+        }
+
+        & .repair {
+            width: 300px;
+            height: auto;
+        }
+    }
+}

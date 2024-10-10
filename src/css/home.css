@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Lexend", sans-serif;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    background-image: url(/src/assets/img/WALPAPPER\ SECONDARY.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 120px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    z-index: 1000;
+    overflow: hidden;
+
+    & img {
+        width: 250px;
+        height: 250px;
+        cursor: pointer;
+        margin-left: 15px;
+    }
+
+    & ul {
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+        margin-right: 15px;
+        gap: 30px;
+
+        & a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        & li {
+            font-size: 20px;
+            color: rgb(69, 7, 131);
+            border-radius: 10px;
+            width: 170px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: 0.4s ease, background-color 0.4s ease;
+
+            &:hover {
+                transform: scale(1.1);
+                background-color: rgba(46, 46, 46, 0.158);
+                backdrop-filter: blur(10px);
+            }
+
+            &:active {
+                transform: scale(0.95);
+                background: rgba(46, 46, 46, 0.16);
+                backdrop-filter: blur(10px);
+            }
+        }
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 999;
+    position: relative;
+    padding-top: 20px;
+
+    & .text-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+    }
+
+    & h1 {
+        font-size: 40px;
+        margin: 0;
+
+        & #animation-name {
+            color: rgba(69, 7, 131, 0.8);
+        }
+    }
+
+    & p {
+        font-size: 25px;
+        margin: 0;
+    }
+
+    & img {
+        width: 600px;
+        height: auto;
+        filter: sepia(1) saturate(5) hue-rotate(270deg) brightness(0.5);
+        transition: transform 0.7s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+}
+
+#section1,
+#section2,
+#section3 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.contacts {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(69, 7, 131, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px 0px;
+    z-index: 1000;
+
+    & .numberAndEmail {
+        cursor: pointer;
+    }
+}
+
+/*ANIMAÇÃO DA PÁGINA INICIAL(DIGITANDO)*/
+
+.cursor {
+    display: inline-block;
+    width: 4px;
+    height: 30px;
+    background-color: rgba(69, 7, 131, 0.8);
+    margin-left: 5px;
+    animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
