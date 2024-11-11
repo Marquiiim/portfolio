@@ -20,9 +20,9 @@ Atualmente, estou focado no desenvolvimento front-end, mas tenho grandes planos 
 ## 📂 Projetos em Destaque
 Aqui estão alguns dos meus projetos mais recentes, que você pode encontrar neste repositório:
 
-**[Projeto 1]**: 
-**[Projeto 2]**: 
-**[Projeto 3]**: 
+**[Projeto 1]**: https://github.com/Marquiiim/Cadastro-Usuarios
+**[Projeto 2]**: https://github.com/Marquiiim/Costs
+**[Projeto 3]**: https://github.com/Marquiiim/Loja-Celular-ALPHA
 Cada um desses projetos reflete minha evolução como desenvolvedor, e continuo a atualizar meu portfólio com novos desafios e experiências à medida que aprendo mais.
 
 ## 🚀 Objetivos Futuros
