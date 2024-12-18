@@ -1,4 +1,4 @@
-# Meu Portfólio - Desenvolvedor Web Front-End
+# Meu Portfólio(DESATUALIZADO) - Desenvolvedor Web Front-End
 ## Bem-vindo ao meu portfólio! 🚀
 
 Sou um estudante de desenvolvimento web, com foco em front-end, e estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades na criação de interfaces interativas e funcionais. Neste repositório, você encontrará uma coleção dos meus projetos e experimentos, que demonstram o meu aprendizado e evolução nas áreas de HTML, CSS, JavaScript, React e Node.js.
